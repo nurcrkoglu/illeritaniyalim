@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/graylight"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerİl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center|bottom"
+            android:contextClickable="true"
+            android:hint="Şehir seçiniz..."
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            tools:background="#ce93d8" />
+
+        <ImageView
+            android:id="@+id/belediyeImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnİlçeler"
+                android:layout_width="164dp"
+                android:layout_height="100dp"
+                android:background="@drawable/buttonstyle"
+                android:text="İlçeler"
+                android:backgroundTint="#ffeb3b"
+                android:textColor="#FFF"
+                android:textStyle="bold|italic"
+                android:theme="@style/Widget.AppCompat.Light.PopupMenu"
+
+                />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnPlaka"
+                android:layout_width="164dp"
+                android:layout_height="100dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Plaka"
+                android:backgroundTint="#ff9800"
+                android:textColor="#FFF"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#000"></View>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnNüfusBilgisi"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Nüfus"
+            android:backgroundTint="#f44336"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnBölge"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Bölge"
+            android:backgroundTint="#e91e63"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnAcıklama"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Açıklama"
+            android:backgroundTint="#9c27b0"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnYöreselOyunlar"
+            android:layout_width="164dp"
+            android:layout_height="100dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Yöresel Oyunlar"
+            android:backgroundTint="#2196f3"
+            android:textColor="#FFF"
+            android:textStyle="bold|italic" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#000"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnGezilecekYerler"
+                android:layout_width="164dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyle"
+                android:text="Gezilecek Yerler"
+                android:backgroundTint="#4caf50"
+                android:textColor="#FFF"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+        <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webview">
+
+    </WebView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
